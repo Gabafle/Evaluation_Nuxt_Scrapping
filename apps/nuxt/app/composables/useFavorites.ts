@@ -30,11 +30,14 @@ export async function addFavorite(userId: number, offerId: number): Promise<Favo
   const config = useRuntimeConfig()
   const base = config.public.apiBase as string
   const url = `${base.replace(/\/$/, '')}/favorites`
+  const date = new Date();
+  date.setTime(date.getTime() / 1000);
 
   try {
     return await $fetch<Favorite>(url, {
       method: 'POST',
-      body: { userId, offerId }
+
+      body: { userId, offerId ,date}
     })
   } catch (e: unknown) {
     const err = e as { data?: { error?: string }; statusCode?: number }

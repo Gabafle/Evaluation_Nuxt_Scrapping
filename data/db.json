@@ -239,69 +239,94 @@
   ],
   "favorites": [
     {
-      "id": 2,
       "userId": 1,
-      "offerId": 2
-    },
-    {
-      "id": 3,
-      "userId": 1,
-      "offerId": 3
-    },
-    {
-      "id": 4,
-      "userId": 1,
-      "offerId": 4
-    },
-    {
-      "id": 5,
-      "userId": 1,
-      "offerId": 5
-    },
-    {
-      "id": 5,
-      "userId": 1,
-      "offerId": 6
-    },
-    {
-      "id": 1,
-      "userId": 2,
-      "offerId": 1
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "offerId": 2
-    },
-    {
-      "id": 3,
-      "userId": 2,
-      "offerId": 3
-    },
-    {
-      "id": 4,
-      "userId": 2,
-      "offerId": 4
-    },
-    {
-      "id": 5,
-      "userId": 2,
-      "offerId": 5
+      "offerId": 1,
+      "id": 2
     },
     {
       "userId": 1,
-      "offerId": 14,
+      "offerId": 1,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "offerId": 2,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "offerId": 5,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "offerId": 2,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "offerId": 3,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "offerId": 6,
       "id": 8
     },
     {
       "userId": 1,
-      "offerId": 20,
+      "offerId": 2,
       "id": 9
     },
     {
       "userId": 1,
-      "offerId": 11,
+      "offerId": 5,
       "id": 10
+    },
+    {
+      "userId": 1,
+      "offerId": 1,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "offerId": 2,
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "offerId": 3,
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "offerId": 6,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "offerId": 2,
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "offerId": 5,
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "offerId": 8,
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "offerId": 11,
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "offerId": 2,
+      "id": 19
     }
   ]
 }
