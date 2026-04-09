@@ -59,6 +59,182 @@
       "salary": "850-1050€/mois",
       "contractType": "Stage de 6 mois",
       "startDate": "2024-10-01"
+    },
+    {
+      "id": 5,
+      "title": "Développeur Backend Java",
+      "company": "BankStream",
+      "location": "Nantes, France",
+      "type": "Stage",
+      "description": "Maintenance et évolution d'API critiques sous Spring Boot et micro-services.",
+      "salary": "1100-1200€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-09-01"
+    },
+    {
+      "id": 6,
+      "title": "Ingénieur DevOps",
+      "company": "CloudReady",
+      "location": "Bordeaux, France",
+      "type": "Stage",
+      "description": "Mise en place de pipelines CI/CD et gestion de conteneurs Docker/Kubernetes.",
+      "salary": "1000-1150€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-11-01"
+    },
+    {
+      "id": 7,
+      "title": "UI/UX Designer",
+      "company": "CreativeStudio",
+      "location": "Lille, France",
+      "type": "Stage",
+      "description": "Conception de maquettes haute fidélité et prototypes interactifs avec Figma.",
+      "salary": "700-900€/mois",
+      "contractType": "Stage de 4 mois",
+      "startDate": "2024-09-10"
+    },
+    {
+      "id": 8,
+      "title": "Développeur Python/IA",
+      "company": "FutureMind",
+      "location": "Grenoble, France",
+      "type": "Stage",
+      "description": "Participation au développement d'algorithmes de Machine Learning pour la santé.",
+      "salary": "950-1200€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-10-15"
+    },
+    {
+      "id": 9,
+      "title": "Consultant Cybersécurité",
+      "company": "SecureNet",
+      "location": "Paris, France",
+      "type": "Stage",
+      "description": "Analyses de vulnérabilités et audits de sécurité sur des infrastructures réseaux.",
+      "salary": "1200-1400€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-12-01"
+    },
+    {
+      "id": 10,
+      "title": "Développeur PHP / Laravel",
+      "company": "WebAgency",
+      "location": "Montpellier, France",
+      "type": "Stage",
+      "description": "Développement de sites e-commerce et d'outils de gestion interne.",
+      "salary": "650-850€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-09-01"
+    },
+    {
+      "id": 11,
+      "title": "Ingénieur QA / Tests",
+      "company": "TestMasters",
+      "location": "Remote",
+      "type": "Stage",
+      "description": "Automatisation de tests avec Cypress et Playwright pour applications web.",
+      "salary": "850-1000€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-08-20"
+    },
+    {
+      "id": 12,
+      "title": "Product Owner Junior",
+      "company": "AgileSoft",
+      "location": "Rennes, France",
+      "type": "Stage",
+      "description": "Gestion du backlog, rédaction de user stories et coordination technique.",
+      "salary": "900-1100€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-09-15"
+    },
+    {
+      "id": 13,
+      "title": "Développeur Ruby on Rails",
+      "company": "FastDev",
+      "location": "Marseille, France",
+      "type": "Stage",
+      "description": "Maintenance d'une plateforme SaaS à fort trafic en environnement agile.",
+      "salary": "800-1000€/mois",
+      "contractType": "Stage de 5 mois",
+      "startDate": "2024-10-01"
+    },
+    {
+      "id": 14,
+      "title": "Data Scientist NLP",
+      "company": "TalkAi",
+      "location": "Paris, France",
+      "type": "Stage",
+      "description": "Amélioration de modèles de traitement du langage naturel pour chatbots.",
+      "salary": "1100-1300€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2025-01-05"
+    },
+    {
+      "id": 15,
+      "title": "Développeur Mobile Android",
+      "company": "DroidLabs",
+      "location": "Strasbourg, France",
+      "type": "Stage",
+      "description": "Création de nouvelles fonctionnalités en Kotlin pour notre application phare.",
+      "salary": "850-1050€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-09-01"
+    },
+    {
+      "id": 16,
+      "title": "Cloud Architect Junior",
+      "company": "SkyHigh",
+      "location": "Lyon, France",
+      "type": "Stage",
+      "description": "Aide à la migration d'architectures on-premise vers AWS et Azure.",
+      "salary": "1000-1200€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-11-15"
+    },
+    {
+      "id": 17,
+      "title": "Développeur C++ / Gaming",
+      "company": "GameStudio",
+      "location": "Annecy, France",
+      "type": "Stage",
+      "description": "Optimisation du moteur de rendu pour un projet de jeu vidéo indépendant.",
+      "salary": "900-1100€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-12-01"
+    },
+    {
+      "id": 18,
+      "title": "Growth Hacker",
+      "company": "ScaleUp",
+      "location": "Nice, France",
+      "type": "Stage",
+      "description": "Automatisation marketing et analyse des metrics d'acquisition client.",
+      "salary": "750-950€/mois",
+      "contractType": "Stage de 4 mois",
+      "startDate": "2024-09-01"
+    },
+    {
+      "id": 19,
+      "title": "Analyste SOC",
+      "company": "CyberShield",
+      "location": "Paris, France",
+      "type": "Stage",
+      "description": "Surveillance des logs et détection d'intrusions en temps réel.",
+      "salary": "1100-1300€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-10-10"
+    },
+    {
+      "id": 20,
+      "title": "Développeur Angular / Go",
+      "company": "ModernStack",
+      "location": "Nantes, France",
+      "type": "Stage",
+      "description": "Conception d'une interface de monitoring en Angular connectée à un backend Go.",
+      "salary": "900-1100€/mois",
+      "contractType": "Stage de 6 mois",
+      "startDate": "2024-09-20"
     }
   ],
   "favorites": []
