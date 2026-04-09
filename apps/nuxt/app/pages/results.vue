@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import type { Offer } from '~/composables/useOffers'
+import { getUserFavorites, type Favorite } from '~/composables/useFavorites'
 import { FunnelIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+import { useAuth } from '~/composables/useAuth'
 
 useSeoMeta({
   title: 'Offres de stage',
   description: 'Recherchez et parcourez les offres de stage disponibles.',
 })
+
+const { authUser } = useAuth()
 
 const offers = ref<Offer[]>([])
 const isLoading = ref(true)
@@ -19,6 +23,16 @@ const searchInput = ref('')
 const currentQuery = computed(() => {
   const q = route.query.q
   return typeof q === 'string' ? q : ''
+})
+
+const { data: favorites } = await useAsyncData<Favorite[]>(
+  'userFavorites',
+  () => authUser.value ? getUserFavorites(authUser.value.id) : Promise.resolve([])
+)
+
+const favoritesMap = computed(() => {
+  if (!favorites.value) return {} as Record<number, number>
+  return Object.fromEntries(favorites.value.map(f => [f.offerId, f.id]))
 })
 
 async function loadOffers() {
@@ -131,7 +145,12 @@ watch(
           {{ offers.length === 1 ? 'résultat trouvé' : 'résultats trouvés' }}
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <OfferCard v-for="offer in offers" :key="offer.id" :offer="offer" />
+          <OfferCard
+            v-for="offer in offers"
+            :key="offer.id"
+            :offer="offer"
+            :initial-favorite-id="favoritesMap[offer.id] ?? null"
+          />
         </div>
       </div>
     </div>
