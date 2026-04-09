@@ -15,7 +15,7 @@ const { data: favorites } = await useAsyncData<Favorite[]>(
   () => getUserFavorites(authUser.value?.id as number)
 )
 
-const { data: offers } = await useAsyncData<Offer[]>('offers', async () => {
+const {data: offers} = await useAsyncData<Offer[]>('offers', async () => {
   const config = useRuntimeConfig()
   const base = config.public.apiBase as string
   const url = `${base.replace(/\/$/, '')}/offers`
@@ -36,8 +36,13 @@ const favoritesMap = computed(() => {
 
 <template>
   <div class="p-4">
-    <h1>Mes favoris</h1>
-    <div class="grid">
+    <h1 class="title">Mes favoris</h1>
+
+    <div v-if="favoriteOffers.length == 0 ">
+      <p>Aucun Favoris</p>
+    </div>
+
+    <div v-else class="offers">
       <OfferCard
         v-for="offer in favoriteOffers"
         :key="offer.id"
@@ -47,3 +52,13 @@ const favoritesMap = computed(() => {
     </div>
   </div>
 </template>
+
+<style>
+.title {
+  font-size: 60px;
+}
+
+.offers {
+  display: grid;
+}
+</style>
