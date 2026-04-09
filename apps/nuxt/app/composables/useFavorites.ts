@@ -45,3 +45,21 @@ export async function addFavorite(userId: number, offerId: number): Promise<Favo
   }
 }
 
+
+export async function removeFavorite(favoriteId: number): Promise<void> {
+  const config = useRuntimeConfig()
+  const base = config.public.apiBase as string
+  const url = `${base.replace(/\/$/, '')}/favorites/${favoriteId}`
+
+  try {
+    await $fetch(url, {
+      method: 'DELETE'
+    })
+  } catch (e: unknown) {
+    const err = e as { data?: { error?: string }; statusCode?: number }
+    throw {
+      error: err?.data?.error ?? (e instanceof Error ? e.message : 'Erreur lors de la suppression du favori'),
+      status: err?.statusCode,
+    } as FavoritesError
+  }
+}
