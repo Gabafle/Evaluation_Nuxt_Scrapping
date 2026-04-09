@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { Offer } from '~/composables/useOffers'
-import { OfferCard } from '#components'
-import { useAuth } from '~/composables/useAuth'
+import type {Offer} from '~/composables/useOffers'
+import {OfferCard} from '#components'
+import {useAuth} from '~/composables/useAuth'
 
-const { authUser } = useAuth()
-const { data: favorites } = await useAsyncData<Favorite[]>(
+const {authUser} = useAuth()
+const {data: favorites} = await useAsyncData<Favorite[]>(
   'userFavorites',
   () => getUserFavorites(authUser.value?.id as number)
 )
 
-const { data: offers } = await useAsyncData<Offer[]>('offers', async () => {
+const {data: offers} = await useAsyncData<Offer[]>('offers', async () => {
   const config = useRuntimeConfig()
   const base = config.public.apiBase as string
   const url = `${base.replace(/\/$/, '')}/offers`
@@ -30,8 +30,13 @@ if (!authUser.value) {
 
 <template>
   <div class="p-4">
-    <h1>Mes favoris</h1>
-    <div class="grid">
+    <h1 class="title">Mes favoris</h1>
+
+    <div v-if="favoriteOffers.length == 0 ">
+      <p>Aucun Favoris</p>
+    </div>
+
+    <div v-else class="offers">
       <OfferCard
         v-for="offer in favoriteOffers"
         :key="offer.id"
@@ -40,3 +45,13 @@ if (!authUser.value) {
     </div>
   </div>
 </template>
+
+<style>
+.title {
+  font-size: 60px;
+}
+
+.offers {
+  display: grid;
+}
+</style>
