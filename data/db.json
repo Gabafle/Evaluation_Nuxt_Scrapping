@@ -242,7 +242,12 @@
     { "id": 2, "userId": 1, "offerId": 2 },
     { "id": 3, "userId": 1, "offerId": 3 },
     { "id": 4, "userId": 1, "offerId": 4 },
-    { "id": 5, "userId": 1, "offerId": 5 }
+    { "id": 5, "userId": 1, "offerId": 5 },
+    { "id": 1, "userId": 2, "offerId": 1 },
+    { "id": 2, "userId": 2, "offerId": 2 },
+    { "id": 3, "userId": 2, "offerId": 3 },
+    { "id": 4, "userId": 2, "offerId": 4 },
+    { "id": 5, "userId": 2, "offerId": 5 }
   ]
 }
 
