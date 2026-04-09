@@ -26,4 +26,22 @@ export async function getUserFavorites(userId: number): Promise<Favorite[]> {
   }
 }
 
+export async function addFavorite(userId: number, offerId: number): Promise<Favorite> {
+  const config = useRuntimeConfig()
+  const base = config.public.apiBase as string
+  const url = `${base.replace(/\/$/, '')}/favorites`
+
+  try {
+    return await $fetch<Favorite>(url, {
+      method: 'POST',
+      body: { userId, offerId }
+    })
+  } catch (e: unknown) {
+    const err = e as { data?: { error?: string }; statusCode?: number }
+    throw {
+      error: err?.data?.error ?? (e instanceof Error ? e.message : 'Erreur lors de l\'ajout aux favoris'),
+      status: err?.statusCode,
+    } as FavoritesError
+  }
+}
 
